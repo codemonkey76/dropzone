@@ -39644,6 +39644,12 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_1___default.a({
       acceptedFiles: 'image/*',
       maxFiles: 1
     }
+  },
+  methods: {
+    drop: function drop() {
+      console.log('Processing files');
+      this.$refs.zone.processQueue();
+    }
   }
 });
 

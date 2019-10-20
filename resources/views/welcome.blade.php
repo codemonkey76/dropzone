@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <vue-auto-dropzone :options="options"></vue-auto-dropzone>
+    <vue-auto-dropzone ref="zone"
+        @drop="drop"
+        :options="options"
+    ></vue-auto-dropzone>
 @endsection
